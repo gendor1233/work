@@ -4,42 +4,45 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace If_IfElse2
+namespace If_ifElse1
 {
     class Program
     {
         static void Main(string[] args)
         {
-             Console.WriteLine("Type in a number from 1 to 5");
-            string userInput = Console.ReadLine();
-            string message = "";
-            if (userInput == "1")
+            Console.WriteLine("Would you prefer what is behind door number 1, 2, 3,4, 5 ");
+            string exValue = Console.ReadLine();
+            if (exValue == "1")
             {
-                message = "You typed in ONE";
+                Console.WriteLine("You won a new Samsung 40 inch plasma tv");
+                Console.ReadLine();
             }
-            else if (userInput == "2")
+            else if (exValue == "2")
             {
-                message = "You typed in TWO";
+                Console.WriteLine("You won a new Haier Thermocool freezer");
+                Console.ReadLine();
             }
-            else if (userInput == "3")
+            else if (exValue == "3")
             {
-                message = "You typed in THREE";
+                Console.WriteLine("You won a new car");
+                Console.ReadLine();
+
             }
-            else if (userInput == "4")
+            else if (exValue == "4")
             {
-                message = "You typed in FOUR";
+                Console.WriteLine("");
+                Console.ReadLine();
             }
-            else if (userInput == "5")
+            else if (exValue == "5")
             {
-                message = "You typed in FIVE";
+                Console.WriteLine("You won a catoon of noodles");
+                Console.ReadLine();
             }
-            else 
+            else
             {
-                message = "Invalid input.. You Lose!!!!";
-            }
-            Console.WriteLine(message);
-            Console.ReadLine();
+                Console.WriteLine("sorry, we didn't understand.  You lose!!!!!!!!");
+                Console.ReadLine();
             }
         }
     }
-
+}
